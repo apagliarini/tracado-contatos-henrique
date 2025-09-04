@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HENRIQUE FERNANDES</title>
+  <style>
+    :root{
+      --red:#E53323;
+      --card:#141414cc;
+      --card2:#1a1a1acc;
+      --text:#f7f7f7;
+      --muted:#b9b9b9;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: 'Poppins', Arial, sans-serif;
+      color:var(--text);
+      display:flex;justify-content:center;align-items:flex-start;
+      min-height:100vh;padding:28px;
+      overflow-x:hidden;
+    }
+    body::before{
+      content:"";
+      position:fixed; inset:0;
+      background: url('data:image/jpeg;base64,...'); /* mantém o mesmo background */
+      background-size:cover;
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <h1>HENRIQUE FERNANDES</h1>
+    <p><strong>Cargo:</strong> Diretor de Engenharia</p>
+    <p><strong>Telefone:</strong> (11) 99651-9282</p>
+    <p><strong>E-mail:</strong> <a href="mailto:henrique.fernandes@tracado.com.br">henrique.fernandes@tracado.com.br</a></p>
+    
+    <div class="qr">
+      <p>Escaneie para acessar:</p>
+      <img src="https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=https://tracado-contatos-henrique.vercel.app" alt="QR Code" />
+    </div>
+  </main>
+</body>
+</html>
